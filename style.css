@@ -1,0 +1,129 @@
+nav{
+    background-image: url(img/wallhaven-4ldo3l.jpg);
+}
+
+.menu{
+    display: flex;
+    color: white;
+    padding: 1rem;
+    gap: 1rem;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.fondo{
+    background-image: url(img/wallhaven-4ldo3l.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; 
+    padding: 1rem;
+    height: 12rem;
+
+}
+
+.padre{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+
+.imagen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.contenedor{
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.filasForm{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    background-color: #f2f1f2;
+    padding: 1rem;
+    border-radius: 1rem; 
+   
+}
+
+.tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+}
+.detalle{
+    background-color: rgb(1, 1, 36);
+    color: white!important;
+    text-align: center;
+}
+h2{
+    text-orientation:upright;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+footer{
+    background-color: rgb(25, 7, 71);
+    padding: 5px;
+    text-align: center;
+    color: white;
+}
+
+#imgCard{
+    object-fit: cover;
+    height: 25rem;
+    width: 20rem;
+}
+
+.fondo{
+    display: flex;
+    justify-content: center;
+
+}
+
+
+input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+}
+
+
+.alert{
+    padding: 1rem;
+    background-color: red!important;
+    text-align: center;
+    color: rgb(255, 255, 255)!important;
+    font-size: 2rem;
+    border-radius: 1rem;
+}
+
+.promedio{
+    font-size: 3rem;
+}
+
+.especialidad{
+    writing-mode: vertical-rl;
+    font-size: 4rem;
+    align-items: center;
+    text-align: center;
+}
+
+.equis{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}

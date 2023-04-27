@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <title>Campus ®</title>
+  </head>
+  <body>
+    <nav>
+      <div class="menu">
+        <img src="img/logoWhite.png" alt="" width="300px" />
+        <h2 style="font-size: 3.5rem">Find Campers to hire</h2>
+      </div>
+    </nav>
+
+    <div class="padre">
+      <div class="container-fluid fondo">
+        
+      
+        <div class="busqueda">
+          <form class="gx-3 gy-2 align-items-center filasForm">
+
+            <!-- Select Nombres campers -->
+            <div class="col-sm-3">
+              <select class="form-select" id="nombre">
+                <option value="">Seleccione Camper</option>
+              </select>
+            </div>
+
+            <!-- Select Edades -->
+            <div class="col-sm-3">
+              <select class="form-select" id="edad">
+                <option value="">Seleccione Edad</option>
+              </select>
+            </div>
+          <!-- Select notas para seleccionar un promedio minimo -->
+            <div class="col-sm-3">
+              <select class="form-select" id="minimo">
+                <option value="">Seleccione Promedio Minimo</option>
+                <option value="3.0">3.0</option>
+                <option value="3.1">3.1</option>
+                <option value="3.2">3.2</option>
+                <option value="3.3">3.3</option>
+                <option value="3.4">3.4</option>
+                <option value="3.5">3.5</option>
+                <option value="3.6">3.6</option>
+                <option value="3.7">3.7</option>
+                <option value="3.8">3.8</option>
+                <option value="3.9">3.9</option>
+                <option value="4.0">4.0</option>
+                <option value="4.1">4.1</option>
+                <option value="4.2">4.2</option>
+                <option value="4.3">4.3</option>
+                <option value="4.4">4.4</option>
+                <option value="4.5">4.5</option>
+                <option value="4.6">4.6</option>
+                <option value="4.7">4.7</option>
+                <option value="4.8">4.8</option>
+                <option value="4.9">4.9</option>
+                <option value="5.0">5.0</option>
+              </select>
+            </div>
+
+            <!-- Select notas para seleccionar un promedio Maximo -->
+            <div class="col-sm-3">
+              <select class="form-select" id="maximo">
+                <option value="">Seleccione Promedio Maximo</option>
+                <option value="3.0">3.0</option>
+                <option value="3.1">3.1</option>
+                <option value="3.2">3.2</option>
+                <option value="3.3">3.3</option>
+                <option value="3.4">3.4</option>
+                <option value="3.5">3.5</option>
+                <option value="3.6">3.6</option>
+                <option value="3.7">3.7</option>
+                <option value="3.8">3.8</option>
+                <option value="3.9">3.9</option>
+                <option value="4.0">4.0</option>
+                <option value="4.1">4.1</option>
+                <option value="4.2">4.2</option>
+                <option value="4.3">4.3</option>
+                <option value="4.4">4.4</option>
+                <option value="4.5">4.5</option>
+                <option value="4.6">4.6</option>
+                <option value="4.7">4.7</option>
+                <option value="4.8">4.8</option>
+                <option value="4.9">4.9</option>
+                <option value="5.0">5.0</option>
+              </select>
+            </div>
+
+            <!-- Select para seleccionar un valor del nivel en campus -->
+            <div class="col-sm-3">
+              <select class="form-select" id="nivelCampus">
+                <option value="">Seleccione Nivel en Campus</option>
+                <option value="basico">Basico</option>
+                <option value="intermedio">Intermedio</option>
+                <option value="avanzado">Avanzado</option>
+              </select>
+            </div>
+          
+             <!-- Select para seleccionar un valor del nivel en Ingles -->
+            <div class="col-sm-3">
+              <select class="form-select" id="nivelIngles">
+                <option value="">Seleccione Nivel en Ingles</option>
+                <option value="beginner">Beginner</option>
+                <option value="middle">Middle</option>
+                <option value="advanced">Advanced</option>
+              </select>
+            </div>
+
+             <!-- Select para seleccionar un valor en la especialidad del camper -->
+            <div class="col-sm-3">
+              <select class="form-select" id="especialidad">
+                <option value="">Seleccione Especialidad</option>
+                <option value="frontEnd">Front-End</option>
+                <option value="backEnd">Back-End</option>
+                <option value="fullStack">Full-Stack</option>
+              </select>
+            </div>
+
+          
+            <!-- Select para seleccionar un valor en  la tecnologia en qjue es experto el camper -->
+            <div class="col-sm-3">
+              <select class="form-select" id="expertoTecnologia">
+                <option value="">Seleccione Experto Tecnologia</option>
+                <option value="html">Html</option>
+                <option value="javascript">JavaScript</option>
+                <option value="node">Node Js</option>
+                <option value="mongo">Mongo DB</option>
+                <option value="php">Php</option>
+                <option value="vue">Vue</option>
+                <option value="asp">ASP.NET</option>
+                <option value="css">Css</option>
+                <option value="python">Python</option>
+                <option value="java">Java</option>
+              </select>
+            </div>
+          </form> 
+        </div>
+      <section class="fondo">
+        <input id="input1" class="input" type="text" placeholder="Buscar Camper">   
+      </section>
+      </div>
+      <!-- Modal -->
+      
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table table-dark">
+                <thead>
+                  <tr>
+                    <th>Foto Camper</th>
+                    <th>Promedio</th>
+                    <th>Especialidad</th>
+                    <th>Experto Tecnologia</th>
+                    <th>Celular</th>
+                    <th>Direccion</th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+        Launch demo modal
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog ">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table id="deleteListCards" class="table table-dark">
+                <thead>
+                  <tr>
+                    <th>Foto Camper</th>
+                    <th>Nombre</th>
+                    <th>Detalles</th>
+                    <th>Eliminar</th>
+                  </tr>
+                </thead>
+                <tbody id="tbodie">
+
+                </tbody>
+              </table>
+              <a href="#" class="btn btn-danger" id="cleanCart">Clean Job Cart</a>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Hire</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="contenedor">
+        <!-- Parent Principal para los resultados de los filtros -->
+        <div class="tarjetas" id="tarjetas">
+          
+        </div>
+
+      </div>
+    </div>
+  </dialog>
+    <footer>Todos los derechos de autor camper Isaias reservados</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <script src="js/db.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
